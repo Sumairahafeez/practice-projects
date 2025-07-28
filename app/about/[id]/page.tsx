@@ -3,13 +3,14 @@ import { authors } from "@/data/authors";
 import { notFound } from "next/navigation";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 export default async function AuthorPage({ params }: PageProps) {
-  const author = authors.find((author) => author.id === params.id);
+  const { id } = await params;
+  const author = authors.find((author) => author.id === id);
 
   if (!author) {
     notFound();

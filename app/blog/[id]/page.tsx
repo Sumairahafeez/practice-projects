@@ -2,12 +2,13 @@ import {posts} from '../../../data/posts';
 import { notFound } from 'next/navigation';
 import BlogCard from '../../../component/blogcard';
 type props = {
-    params : {
+    params : Promise<{
         id: string;
-    }
+    }>;
 };
-export default function BlogPage({ params }: props) {
-  const post = posts.find((p) => p.id === params.id);
+export default async function BlogPage({ params }: props) {
+  const { id } = await params;
+  const post = posts.find((p) => p.id === id);
   if (!post) notFound();
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
