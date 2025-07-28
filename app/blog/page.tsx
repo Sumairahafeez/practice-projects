@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {posts} from '../../data/posts';
+import blogCard from '../../component/blogcard';
 function BlogIndex() {
 return(
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20">
@@ -9,6 +10,7 @@ return(
         <p className="text-lg">Here you will find my latest posts and updates.</p>
         <ul>
           {posts.map((post) => (
+            
             <li key={post.id} className="mb-4">
               <Link href={`/blog/${post.id}`} className="text-blue-600 hover:underline">
                 {post.title}

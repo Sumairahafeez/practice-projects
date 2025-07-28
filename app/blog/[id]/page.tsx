@@ -1,5 +1,6 @@
 import {posts} from '../../../data/posts';
 import { notFound } from 'next/navigation';
+import BlogCard from '../../../component/blogcard';
 type props = {
     params : {
         id: string;
