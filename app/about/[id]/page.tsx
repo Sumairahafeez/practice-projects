@@ -8,7 +8,7 @@ type PageProps = {
   };
 };
 
-export default function AuthorPage({ params }: PageProps) {
+export default async function AuthorPage({ params }: PageProps) {
   const author = authors.find((author) => author.id === params.id);
 
   if (!author) {
