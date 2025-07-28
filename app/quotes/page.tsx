@@ -20,10 +20,10 @@ export default function QuoteGenerator() {
     }
     const [randomQuote, setRandomQuote] = useState("Click the button to generate a quote!");
     const handleGenerateQuote = () => {
-        // generateQuote();
-        // setRandomQuote(quote);
+        generateQuote();
+        setRandomQuote(quote);
         setLoading(true);
-        fetchQuote();
+        // fetchQuote();
     }
     async function fetchQuote() {
         const response = await fetch("https://api.quotable.io/random");
@@ -50,7 +50,7 @@ export default function QuoteGenerator() {
   </svg>
 </div>
 <div className="body-text">{randomQuote}</div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mt-[100px]">
                 <Button onClick={handleGenerateQuote} innerText="Generate"/>
             </div>
 </div>
