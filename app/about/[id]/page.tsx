@@ -3,13 +3,13 @@
 import { authors } from "@/data/authors";
 import { notFound } from "next/navigation";
 
-type props = {
+type Pageprops = {
   params: {
     id: string;
   };
 };
 
-export default function AuthorPage({ params }: props) {
+export default function AuthorPage({ params }: Pageprops) {
   const author = authors.find((author) => author.id === params.id);
 
   if (!author) {
