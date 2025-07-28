@@ -32,6 +32,11 @@ export default function RootLayout({
             className="text-lg font-semibold text-blue-600 hover:underline">
             Home
           </Link>
+          <Link
+            href = '/quotes'
+            className="text-lg font-semibold text-blue-600 hover:underline">
+            Quotes
+          </Link>
           <div>
 
          
