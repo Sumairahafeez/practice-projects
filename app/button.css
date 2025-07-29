@@ -2,7 +2,7 @@
 .button-container {
   display: flex;
   background-color: rgba(0, 73, 144);
-  width: 350px;
+  width: 550px;
   height: 40px;
   align-items: center;
   justify-content: space-around;
@@ -12,7 +12,7 @@
   transition: all 0.5s;
 }
 .button-container:hover {
-  width: 500px;
+  width: 600px;
   transition: all 0.5s;
 }
 

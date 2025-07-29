@@ -61,6 +61,12 @@ export default function RootLayout({
             store
           </Link>
   </button>
+  <button className="button">
+          <Link
+            href="/community">
+            community
+          </Link>
+  </button>
 </div>
 
         <div className="flex gap-8 min-h-screen flex-row justify-center p-4">
