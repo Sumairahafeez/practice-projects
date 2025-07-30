@@ -8,7 +8,7 @@ export default function about() {
         <p>This is the about page of our blog.</p>
         <p>Here you can find information about the authors and the purpose of this blog.</p>
         <p>We aim to share knowledge and insights on various topics through our posts.</p>
-        <p>Feel free to explore our blog and learn more about us!</p>
+        <p>Feel free to explore our blog and learn more about us we can have a teams page too!</p>
       </div>
       <div className='flex flex-col items-center justify-center p-8 pb-8 sm:p-20'>
         <h2>Authors</h2>
